@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site_template</title>
+    <style>
+        * {
+            background-color: black;
+        }
+
+        .container {
+            display: grid;
+            width: 70%;
+            height: 750px;
+            margin: auto;
+            padding: 30px;
+            background-color: white;
+
+            gap: 55px;
+            grid-template-rows: 70px 600px;
+            grid-template-columns: 200px 600px;
+            grid-template-areas: "top top"
+                " bottom1 bottom2";
+            justify-content: center;
+        }
+
+
+
+        div>div:nth-child(1) {
+            grid-area: top;
+            background-color: rgb(233, 10, 10);
+            border-radius: 8px;
+
+        }
+
+        div>div:nth-child(2) {
+            grid-area: bottom1;
+            background-color: rgb(102, 192, 11);
+            border-radius: 8px;
+
+        }
+
+        div>div:nth-child(3) {
+            grid-area: bottom2;
+            background-color: #3c6e59;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+</body>
+
+</html>
